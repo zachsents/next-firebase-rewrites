@@ -1,7 +1,7 @@
 {
-    "name": "next-firebase-rewrites",
+    "name": "@zachsents/next-firebase-rewrites",
     "version": "1.0.0",
-    "description": "",
+    "description": "A CLI tool to generate firebase.json hosting rewrites for Next.js projects.",
     "bin": {
         "next-firebase-rewrites": "./bin/index.js"
     },
@@ -10,10 +10,11 @@
         "test": "cd test && next-firebase-rewrites build"
     },
     "keywords": [],
-    "author": "",
+    "author": "zachsents",
     "license": "ISC",
     "type": "module",
     "dependencies": {
         "yargs": "^17.7.2"
-    }
+    },
+    "repository": "github:zachsents/next-firebase-rewrites"
 }
