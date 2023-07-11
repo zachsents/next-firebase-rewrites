@@ -1,0 +1,40 @@
+{
+    "firestore": {
+        "rules": "firestore-rules/firestore.rules",
+        "indexes": "firestore.indexes.json"
+    },
+    "functions": {
+        "source": "functions",
+        "ignore": [
+            "node_modules",
+            ".git",
+            "firebase-debug.log",
+            "firebase-debug.*.log",
+            "buildDeps.js",
+            "cleanupBuild.js"
+        ]
+    },
+    "hosting": {
+        "public": "web/out",
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**"
+        ],
+        "cleanUrls": true,
+        "rewrites": [
+            {
+                "regex": "^/app/([^/]+?)(?:/)?$",
+                "destination": "/app/[appId].html"
+            },
+            {
+                "regex": "^/app/([^/]+?)/flow/create(?:/)?$",
+                "destination": "/app/[appId]/flow/create.html"
+            },
+            {
+                "regex": "^/app/([^/]+?)/flow/([^/]+?)/edit(?:/)?$",
+                "destination": "/app/[appId]/flow/[flowId]/edit.html"
+            }
+        ]
+    }
+}
