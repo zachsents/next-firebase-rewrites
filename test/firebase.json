@@ -21,7 +21,6 @@
             "**/.*",
             "**/node_modules/**"
         ],
-        "cleanUrls": true,
         "rewrites": [
             {
                 "regex": "^/app/([^/]+?)(?:/)?$",
@@ -35,6 +34,7 @@
                 "regex": "^/app/([^/]+?)/flow/([^/]+?)/edit(?:/)?$",
                 "destination": "/app/[appId]/flow/[flowId]/edit.html"
             }
-        ]
+        ],
+        "cleanUrls": true
     }
 }

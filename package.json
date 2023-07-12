@@ -1,6 +1,6 @@
 {
     "name": "@zachsents/next-firebase-rewrites",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "A CLI tool to generate firebase.json hosting rewrites for Next.js projects.",
     "bin": {
         "next-firebase-rewrites": "./bin/index.js"

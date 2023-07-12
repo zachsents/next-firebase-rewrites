@@ -38,6 +38,9 @@ export async function configureRoutes({
             }))
     )
 
+    // set cleanUrls to true
+    firebaseConfig.hosting.cleanUrls = true
+
     // write out modified config
     await fs.writeFile(firebaseConfigPath, JSON.stringify(firebaseConfig, null, jsonSpaces))
 
